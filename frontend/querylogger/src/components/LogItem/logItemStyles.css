@@ -1,0 +1,51 @@
+.logDetailItem {
+  display: flex;
+  flex-direction: row;
+  width: 30%;
+  padding: 0.5rem;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 0.5rem;
+}
+
+.logMessageItem {
+  display: flex;
+  flex-direction: row;
+  width: 60%;
+  padding: 0.5rem;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 0.5rem;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.logItem {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border: 1px solid #d3d3d3; /* Light gray */
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  box-sizing: border-box;
+  flex-wrap: wrap;
+  flex: "1 1 100%";
+}
+
+@media (max-width: 768px) {
+  .logItem {
+    flex-direction: column;
+  }
+  .logDetailItem {
+    width: 90%;
+  }
+  .logMessageItem {
+    width: 90%;
+  }
+}
